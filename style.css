@@ -1,0 +1,133 @@
+#tabs-tabbar-container {
+    margin-left: calc(17vw + 0px);
+    margin-right: 40px;
+    transition: all .5s;
+    padding-top: 0 !important;
+}
+
+#browser:has(.toolbar-mailbar:not(.toolbar-hidden)) #tabs-tabbar-container {
+    margin-left: 47rem;
+    margin-right: -50px;
+}
+
+.win.normal .tab-group-indicator {
+    top: -2px;
+}
+
+.win.normal #titlebar:not(.tabless) {
+    top: -5px;
+}
+
+.UrlBar-AddressField {
+    width: 20vw;
+
+    /* added animation for extending and reducing the width */
+    transition: .2s ease-in-out !important;
+}
+
+.UrlBar-AddressField .ContentBlocker-Control {
+    display: none;
+}
+
+/* .address-top .mainbar > .toolbar-mainbar {
+    border-bottom: unset;
+    height: 34px;
+} */
+
+/* Remove line under address bar and extensions bar */
+.address-top .mainbar > .toolbar-mainbar .toolbar-extensions:before,
+.address-top .mainbar > .toolbar-mainbar:before {
+  content: unset;
+}
+
+.OmniDropdown {
+    margin-top: -3px;
+}
+
+.mainbar .toolbar-mainbar:not(.toolbar-wrap .toolbar-droptarget) {
+    position: absolute;
+    top: 0;
+    left: 0px !important;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.mainbar .toolbar-mainbar {
+    background: var(--colorBg) !important;
+    border-bottom: none !important;
+}
+
+.mainbar .toolbar-mainbar::before,
+.mainbar .toolbar-extensions::before {
+    display: none;
+}
+
+.win.normal .mainbar .toolbar-mainbar {
+    left: unset;
+    right: unset;
+}
+
+.mainbar .toolbar-mailbar {
+    width: 45rem;
+}
+
+.toolbar-mailbar .button-toolbar[title*="Seite"] {
+    display: none;
+}
+
+.toolbar-extensions {
+    position: absolute !important;
+    transform: translate(-100%);
+    background-color: var(--colorBg) !important;
+    left: calc(100vw - 140px) !important;
+    height: 30px !important;
+    right: unset !important;
+
+}
+
+.window-buttongroup {
+    height: 35px;
+}
+
+#browser:not(.is-settingspage) #main {
+    position: unset;
+}
+
+#header {
+    height: 30px;
+    min-height: unset !important;
+}
+
+.vivaldi {
+    height: 34px;
+    max-height: 34px;
+    width: 34px;
+    margin-top: 3px;
+    border-radius: var(--radius) !important;
+}
+
+.vivaldi:hover {
+    background-color: var(--colorAccentBgDark) !important;
+}
+
+.vivaldi .expand-arrow {
+    display: none;
+}
+
+#browser.popup #header {
+    height: 35px !important;
+    background: var(--colorBg) !important;
+}
+
+#browser.popup .UrlBar-AddressField,
+#browser.popu .UrlBar-AddressField:focus-within {
+    width: 40vw !important;
+}
+
+#browser.popup .window-buttongroup button {
+    height: 35px !important;
+}
+
+#browser.popup .toolbar-extensions {
+    left: calc(100vw - 175px) !important;
+}
