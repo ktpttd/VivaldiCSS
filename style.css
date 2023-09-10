@@ -29,17 +29,6 @@
     display: none;
 }
 
-/* .address-top .mainbar > .toolbar-mainbar {
-    border-bottom: unset;
-    height: 34px;
-} */
-
-/* Remove line under address bar and extensions bar */
-.address-top .mainbar > .toolbar-mainbar .toolbar-extensions:before,
-.address-top .mainbar > .toolbar-mainbar:before {
-  content: unset;
-}
-
 .OmniDropdown {
     margin-top: -3px;
 }
@@ -151,8 +140,18 @@ button.vivaldi,.toggle-trash { display: none !important;}
 #browser input,
 #browser select,
 #browser textarea {
-    font-family: Outfit, Rubik, Roboto, 'VNF-Futura', Arial, Tahoma, 'MS Sans Serif', 'Segoe UI', system-ui, sans-serif !important;
+    font-family: ReadexPro, BeVietnamPro, Outfit, Rubik, system-ui, sans-serif !important;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.0;
 }
+
+
+/* resize bookmark tab */
+.bookmark-bar {
+    height: 24px !important;
+} 
+
+.address-top .mainbar > .toolbar-mainbar {
+    border-bottom: none !important;
+  }
