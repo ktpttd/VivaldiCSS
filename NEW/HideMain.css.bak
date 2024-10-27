@@ -1,0 +1,39 @@
+:root {
+    --hide-mainbar: true;
+    --mainbar-hiddden-size: 5px;
+    --hide-tabbar: true;
+    --tabbar-hiddden-size: 10px; /* When not at top */
+    --hide-bookmarkbar: true
+  }
+  
+  @media all and (display-mode: browser) {
+    body:has(#main > .inner:hover, footer:hover) {
+      @container style(--hide-tabbar: true) {
+        #header {display: none}
+      }
+      @container style(--hide-bookmarkbar: true) {
+        .bookmark-bar {display: none}
+      }
+      @container style(--hide-mainbar: true) {
+        .mainbar {
+          * {display: none}
+          height: var(--mainbar-hiddden-size);
+        }
+      }
+    }
+    
+    @container style(--hide-tabbar: true) {
+      .inner > .tabbar-wrapper:not(:hover) {
+        * {display: none}
+        width: var(--tabbar-hiddden-size);
+      }
+      footer:not(:hover) .tabbar-wrapper {
+        * {display: none}
+        height: var(--tabbar-hiddden-size);
+      }
+      #panels-container:not(:hover) {
+        * {display: none}
+        max-width: var(--tabbar-hiddden-size);
+      }
+    }
+  }

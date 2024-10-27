@@ -1,5 +1,5 @@
 #tabs-tabbar-container {
-    margin-left: calc(17vw + 0px);
+    margin-left: calc(16vw);
     margin-right: 40px;
     transition: all .5s;
     padding-top: 0 !important;
@@ -18,8 +18,13 @@
     top: -5px;
 }
 
+.UrlBar-SearchField,
+.Searchfield {
+display: none !important;
+}
+
 .UrlBar-AddressField {
-    width: 20vw;
+    width: 17vw;
 
     /* added animation for extending and reducing the width */
     transition: .2s ease-in-out !important;
